@@ -87,7 +87,7 @@ ul {
   overflow: hidden;
   background-color: #ffb8ca;
   padding-top: 193px;
-  padding-bottom: 160px;
+  padding-bottom: 90px;
   @media screen and (min-width: 768px) {
     padding-top: 102px;
     padding-bottom: 30px;
@@ -104,7 +104,7 @@ ul {
     top: 83px;
     left: 36px;
     @media screen and (min-width: 768px) {
-      top: 31px;
+      top: -71px;
       left: 307px;
     }
   }
@@ -138,7 +138,7 @@ ul {
   }
   &__advantages {
     position: absolute;
-    top: 96px;
+    top: 6px;
     right: 44px;
     z-index: 10;
     @media screen and (max-width: 767px) {
@@ -175,7 +175,7 @@ ul {
     border-radius: 50%;
     position: absolute;
     background-color: #ffffff;
-    top: 94px;
+    top: 6px;
     right: 44px;
     @media screen and (max-width: 767px) {
       display: none;
@@ -188,7 +188,7 @@ ul {
     border-radius: 50%;
     position: absolute;
     background-color: #ffffff;
-    top: 151px;
+    top: 55px;
     right: 44px;
     @media screen and (max-width: 767px) {
       display: none;
@@ -269,14 +269,14 @@ ul {
     top: 92px;
     left: 117px;
     @media screen and (min-width: 768px) {
-      top: 63px;
+      top: -39px;
       left: 378px;
     }
   }
   &__girl {
     width: auto;
     position: absolute;
-    top: 266px;
+    top: 166px;
     right: 34px;
     @media screen and (max-width: 767px) {
       display: none;
@@ -284,7 +284,7 @@ ul {
   }
   &__milk {
     position: absolute;
-    top: 245px;
+    top: 143px;
     left: 34px;
     @media screen and (max-width: 767px) {
       display: none;
