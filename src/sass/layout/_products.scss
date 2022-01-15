@@ -118,3 +118,25 @@
   letter-spacing: 0.04em;
   color: #ffffff;
 }
+
+.btn-products {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: block;
+  border: none;
+  align-items: center;
+  text-align: center;
+  margin: 30px auto 41px;
+}
+
+.btn-products__icon {
+  display: block;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  fill: #d41443;
+  margin: auto;
+}
