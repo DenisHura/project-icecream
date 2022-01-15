@@ -1,0 +1,11 @@
+list {
+    list-style: none;
+}
+
+.adv__item:before {
+    content:"";
+    display:inline-block;
+    width:100px;
+    height:100px;
+    background-image:url('adv1.png');
+ }
