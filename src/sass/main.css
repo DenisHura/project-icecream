@@ -196,6 +196,13 @@ img {
   color: #ffffff;
 }
 
+.section-products__text::after {
+  display: block;
+  content: '. . .';
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 .section-products__content {
   width: 200px;
   margin: auto;
