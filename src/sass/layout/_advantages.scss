@@ -1,11 +1,42 @@
-list {
-    list-style: none;
+.adv{
+    padding: 0 5px;
 }
-
-.adv__item:before {
-    content:"";
-    display:inline-block;
-    width:100px;
-    height:100px;
-    background-image:url('adv1.png');
- }
+.adv__list {
+    margin-bottom: -38px;
+}
+.adv__item {
+    margin-bottom: 38px;
+    padding-right: 70px;
+}
+.adv__title {
+    font-family: Titan One;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin: 16px 0;
+}
+.adv__text {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #000000;
+}
+ .adv__item:before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+.adv__item_first:before {
+    background-image: url("//src/images/advantages/adv1.png");
+}
+.adv__item_second:before {
+    background-image: url("//src/images/advantages/adv2.png");
+}
+.adv__item_third:before {
+    background-image: url("//src/images/advantages/adv3.png");
+}
