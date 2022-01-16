@@ -4,10 +4,23 @@
       <use href="./images/icon.svg#icon-logo"></use>
     </svg>
     <p class="header__title">icecream</p>
+
+    <nav class="nav">
+      <ul class="nav__list">
+      <li class="nav__item"> <a class="nav__link" href="#home">Home</a></li>
+      <li class="nav__item"> <a class="nav__link" href="#about">About us</a></li>
+      <li class="nav__item"> <a class="nav__link" href="#made">How it’s made?</a></li>
+      <li class="nav__item"> <a class="nav__link" href="#products">Our products</a></li>
+      <li class="nav__item"> <a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <svg class="header__open" width="20" height="12">
-      <use href="./images/icon.svg#icon-burger"></use>
+      <use href="./images/icon.svg#icon-menu_24px"></use>
     </svg>
-    <button class="header__btn" type="button">Buy now <span class="heade__slogan">></span></button>
+    
+    <button class="header__btn" type="button">Buy now <svg class="header__icon" width="4" height="8">
+      <use href="./images/icon.svg#icon-vector-btn"></use>
+    </svg></button>
   </div>
 </header>
 
@@ -24,14 +37,12 @@
         <a href="#products"><button class="hero__btn" type="button">Products</button></a>
       </li>
       <li class="hero__item">
-        <a href="#about"
+        <a href="#made" 
           ><button class="hero__btn hero__btn--button" type="button">How it’s made?</button></a
         >
       </li>
     </ul>
-    <div>
-
-    
+    <div class="hero__benefits">
     <ul class="hero__advantages">
       <li class="hero__element">
         <span class="hero__numbers">16</span>
@@ -41,13 +52,24 @@
         <span class="hero__numbers">23</span>
         <p class="hero__subtitle">food trucks</p>
       </li>
-    </ul></div>
+    </ul>
+    <div class="hero__circle"></div>
+    <div class="hero__circle1"></div>
+  </div>
+
+
+
     <p class="hero__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et
     </p>
-    <div class="hero__circle"></div>
-    <div class="hero__circle1"></div>
+
+    <div class="hero__circle3">
+<svg class="hero__svg" width="8" height="8">
+      <use href="./images/icon.svg#icon-arrow-right2"></use>
+    </svg></div>
+
+    
     <!-- мороженка-->
     <picture class="hero__pic">
       <source
@@ -91,6 +113,7 @@
   
   <!-- дівчина-->
   <picture class="hero__girl">
+  
     <source
       type="image/jpeg"
       srcset="./images/header/pic3-768px.png 1x, ./images/header/pic3-768px@2x.png 2x"
@@ -107,6 +130,6 @@
       src="./images/header/pic3-768px.png"
       alt="ice"
       width="768"
-    /></div>
-  </picture>
+    /></picture>
+  
 </section>
