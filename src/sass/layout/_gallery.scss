@@ -1,0 +1,26 @@
+.gallery__list {
+  border: solid 3px;
+  display: block;
+  position: relative;
+  padding: 0 112px;
+  background-image: linear-gradient(to bottom, #fff5f6 39%, #fff 61%);
+
+  .gallery__item {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    flex-wrap: wrap;
+
+    .gallery__foto {
+      border-radius: 5%;
+
+      @media screen and (width-min: 1280px) {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 450px) {
+    margin: 145px auto 117px auto;
+  }
+}
