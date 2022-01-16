@@ -1,0 +1,176 @@
+.about {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background-color: #fff5f6;
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    background-size: 100%;
+    background: url(/images/mobile-img/sectionbg.png) no-repeat;
+    background-position: center;
+    background-position-y: 85%;
+    background-size: 100% 133px;
+    background-color: #fff5f6;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 35px;
+  }
+  @media screen and (min-width: 1279px) {
+    padding-top: 120px;
+    padding-bottom: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
+    background-size: 100% auto;
+    background: url(/images/descktop-img/sectionbg.png) no-repeat;
+    background-position: center;
+    background-position-y: 120%;
+    background-size: 100% 534px;
+    background-color: #fff5f6;
+  }
+}
+
+.text {
+  line-height: 19px;
+  letter-spacing: 0.04em;
+
+  letter-spacing: 0.04em;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  display: block;
+  width: 100%;
+
+  @media screen and(min-width:768px) {
+    width: 340px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 176%;
+  }
+  @media screen and(min-width:1280px) {
+    width: 463px;
+  }
+}
+
+.text2 {
+  line-height: 19px;
+  letter-spacing: 0.04em;
+
+  letter-spacing: 0.04em;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and(min-width:768px) {
+    width: 340px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 176%;
+  }
+  @media screen and(min-width:1280px) {
+    width: 463px;
+  }
+}
+.about-list {
+  // @media screen and (min-width: 0px) and (max-width: 767px) {
+  //   background-size: 100%;
+  //   background: url(/images/mobile-img/sectionbg.png) no-repeat;
+  //   background-position: center;
+  //   background-position-y: 70%;
+  //   background-size: 100%;
+  // }
+  @media screen and(min-width:768px) {
+    margin-top: 50px;
+    width: 340px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-left: 0px;
+    width: 463px;
+  }
+}
+.about-list-item {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 220px;
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
+}
+.about-box {
+  // @media screen and (min-width: 0px) and (max-width: 767px) {
+  //   background-size: 100% auto;
+  //   background: url(../images/mobile-img/sectionbg.png) no-repeat;
+  //   background-position: center;
+  //   background-position-y: 90%;
+  //   -moz-background-size: 100%;
+  // }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
+    // background-size: 100% auto;
+    // background: url(../images/descktop-img/sectionbg.png) no-repeat;
+    // background-position: center;
+    // background-position-y: -200%;
+    // background-size: 100%;
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+  }
+}
+.button {
+  background-color: #ffffff;
+  width: 176px;
+  height: 44px;
+  border: none;
+  border-radius: 100px;
+  color: #d41443;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.about-pre-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-title {
+  text-align: center;
+}
+.about-picture {
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    margin: 0px;
+    width: 320px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 60px;
+  }
+}
+.about-container {
+  padding: 0vw;
+  // @media screen and (min-width: 1280px) {
+  //   justify-content: center;
+  //   background-size: 100% auto;
+  //   background: url(/images/descktop-img/sectionbg.png) no-repeat;
+  //   background-position: center;
+  //   background-position-y: 300%;
+  //   background-size: 100%;
+  // }
+}
+
+// .about-second {
+//   background: url('./images/mobile-img/milkmob.png');
+// }
