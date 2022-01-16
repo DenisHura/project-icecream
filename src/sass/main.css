@@ -83,4 +83,15 @@ img {
     width: 1280px;
   }
 }
+
+.gallery {
+  display: block;
+  position: relative;
+  margin: 145px auto 117px auto;
+  height: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(39%, #fff5f6), color-stop(61%, #ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6 39%, #ffffff 61%);
+  background-size: cover;
+  background-position: center;
+}
 /*# sourceMappingURL=main.css.map */
