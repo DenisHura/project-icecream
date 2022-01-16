@@ -276,19 +276,16 @@
   align-items: center;
   text-align: center;
   margin: 30px auto 41px;
+  &:hover,
+  &:focus {
+    background-color: hsl(345, 98%, 82%);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
   @media screen and (min-width: 768px) {
     margin: 40px auto 40px;
   }
   @media screen and (min-width: 1280px) {
     margin: 62px auto 50px;
   }
-}
-
-.btn-products__icon {
-  display: block;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  fill: #d41443;
-  margin: auto;
 }

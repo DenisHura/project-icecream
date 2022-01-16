@@ -456,6 +456,12 @@ img {
   margin: 30px auto 41px;
 }
 
+.btn-products:hover, .btn-products:focus {
+  background-color: #fea4bb;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 @media screen and (min-width: 768px) {
   .btn-products {
     margin: 40px auto 40px;
@@ -466,18 +472,5 @@ img {
   .btn-products {
     margin: 62px auto 50px;
   }
-}
-
-.btn-products__icon {
-  display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  fill: #d41443;
-  margin: auto;
 }
 /*# sourceMappingURL=main.css.map */
