@@ -88,6 +88,10 @@ img {
   }
 }
 
+.adv-section {
+  background-color: var(--section-bg-color);
+}
+
 .adv {
   padding-bottom: 97px;
 }
