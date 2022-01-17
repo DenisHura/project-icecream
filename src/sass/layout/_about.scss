@@ -176,6 +176,13 @@
   display: inline-block;
   font-size: 16px;
   margin-top: 20px;
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: #d41443;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     display: flex;
     position: relative;
@@ -193,11 +200,34 @@
 }
 .about-picture {
   @media screen and (min-width: 0px) and (max-width: 767px) {
+    content: '';
     margin: 0px;
     width: 320px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/mobile-img/about-1dt-2x-mob.png);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    height: 340px;
+    content: '';
+
+    background-image: url(/images/tablet-img/about-1dt-1x-tab.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/tablet-img/about-1dt-2x-tab.png);
+      background-size: cover;
+    }
   }
   @media screen and (min-width: 1280px) {
+    width: 516px;
+    height: 516px;
+
+    background-image: url(/images/descktop-img/about-1dt-1x-desk.png);
     margin-right: 60px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/descktop-img/about-1dt-2x-desk.png);
+      background-size: cover;
+    }
   }
 }
 .about-container {
