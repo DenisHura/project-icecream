@@ -88,6 +88,9 @@ a {
       display: none;
     }
   }
+  &__icon {
+    margin-left: 10px;
+  }
   &__btn {
     width: 160px;
     height: 44px;
@@ -527,7 +530,6 @@ a {
 
 .menu {
   position: relative;
-
   overflow: hidden;
   padding: 23px 0px 0 0px;
   position: fixed;
@@ -537,13 +539,26 @@ a {
   width: 250px;
   height: 100vh;
   z-index: 100;
+  @media screen and (min-width: 768px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 820px) {
+    width: 550px;
+  }
 
   &__svg {
     display: block;
     fill: #fff;
     cursor: pointer;
     margin-left: 208px;
+    @media screen and (min-width: 768px) {
+      margin-left: 280px;
+    }
+    @media screen and (min-width: 820px) {
+      margin-left: 500px;
+    }
   }
+
   &__btn {
     display: block;
     width: 209px;
@@ -588,30 +603,22 @@ a {
       color: #d41443;
     }
   }
-  // &__radius {
-  //   position: absolute;
-  //   width: 250px;
-  //   margin-bottom: 13px;
-  //   left: 0px;
-  //   top: 123px;
 
-  //   border-bottom: 1px solid #e18298;
-  // }
   &__item {
     width: 100%;
 
     margin-bottom: 11px;
 
-    // border-top: 1px solid #e18298;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #e18298;
   }
   &__close {
     background-color: transparent;
     border: none;
     margin-bottom: 23px;
   }
-  &__item--border {
-    border-bottom: 1px solid #000000;
+  &__border {
+    width: 100%;
+    border-bottom: 1px solid #e18298;
   }
 }
 .is-hidden {
