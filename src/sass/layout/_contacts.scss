@@ -315,7 +315,7 @@
 
 .franchise-backdrop {
   position: fixed;
-  z-index: 6;
+  z-index: 160;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -324,7 +324,7 @@
   transition: opacity 1000ms var(--animation), visibility 1000ms var(--animation);
 }
 
-.franchise-backdrop.visually-hidden {
+.franchise-backdrop.is-hidden {
   .franchise-modal {
     transform: translate(-50%, -50%) scale(1.5);
     transition: transform 1000ms var(--animation);
