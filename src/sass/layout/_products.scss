@@ -75,6 +75,16 @@
   }
 }
 
+.section-products__item--first {
+  background: #ffb8ca;
+}
+.section-products__item--second {
+  background: #f0d1a5;
+}
+.section-products__item--third {
+  background: #c2e297;
+}
+
 .section-products__item {
   width: 280px;
   height: 485px;
@@ -83,7 +93,7 @@
   top: 839px;
   margin-right: auto;
   margin-left: auto;
-  background: #ffb8ca;
+  // background: #ffb8ca;
   border-radius: 24px;
   &:not(:last-child) {
     margin-bottom: 130px;
