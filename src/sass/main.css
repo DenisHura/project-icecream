@@ -84,14 +84,17 @@ img {
   }
 }
 
+.section__gallery {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(40%, #ffffff), color-stop(60%, #ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%, #ffffff 60%);
+  background-position: center;
+  background-size: cover;
+}
+
 .gallery {
   width: 100%;
   display: block;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(40%, #ffffff), color-stop(60%, #ffffff));
-  background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%, #ffffff 60%);
   height: auto;
-  background-position: center;
-  background-size: cover;
 }
 
 @media screen and (max-width: 767px) {
@@ -120,10 +123,6 @@ img {
   display: grid;
   position: relative;
   grid-gap: 3px;
-  -ms-grid-columns: 125px 125px 125px 125px 125px 125px 125px;
-      grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
-  -ms-grid-rows: 125px 125px 125px;
-      grid-template-rows: 125px 125px 125px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -134,10 +133,37 @@ img {
   transition: 1ms;
 }
 
+@media screen and (min-width: 480px) {
+  .gallery__list {
+    -ms-grid-columns: 42px 42px 42px 42px 42px 42px 42px;
+        grid-template-columns: 42px 42px 42px 42px 42px 42px 42px;
+    -ms-grid-rows: 42px 42px 42px;
+        grid-template-rows: 42px 42px 42px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .gallery__list {
+    -ms-grid-columns: 84px 84px 84px 84px 84px 84px 84px;
+        grid-template-columns: 84px 84px 84px 84px 84px 84px 84px;
+    -ms-grid-rows: 84px 84px 84px;
+        grid-template-rows: 84px 84px 84px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__list {
+    -ms-grid-columns: 125px 125px 125px 125px 125px 125px 125px;
+        grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
+    -ms-grid-rows: 125px 125px 125px;
+        grid-template-rows: 125px 125px 125px;
+  }
+}
+
 .gallery__list li {
   position: relative;
-  -webkit-transition: 1ms;
-  transition: 1ms;
+  -webkit-transition: 600s;
+  transition: 600s;
 }
 
 .gallery__list li:hover .gallery__foto,
@@ -332,11 +358,8 @@ img {
 
 .gallery__foto {
   border-radius: 7%;
-}
-
-@media screen and (width-min: 1280px) {
-  .gallery__foto {
+  /*@media screen and (width-min: 1280px) {
     width: 50%;
-  }
+  }*/
 }
 /*# sourceMappingURL=main.css.map */
