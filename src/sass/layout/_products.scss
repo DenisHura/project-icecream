@@ -81,7 +81,8 @@
   margin: auto;
   left: 20px;
   top: 839px;
-  margin: 0, auto;
+  margin-right: auto;
+  margin-left: auto;
   background: #ffb8ca;
   border-radius: 24px;
   &:not(:last-child) {
@@ -181,6 +182,7 @@
 }
 
 .section-products__text--third::before {
+  background-repeat: no-repeat;
   display: inline-block;
   margin-bottom: 22px;
   margin-top: -113px;
@@ -193,6 +195,7 @@
     background-size: cover;
   }
   @media screen and (min-width: 768px) {
+    background-repeat: no-repeat;
     width: 220px;
     height: 224px;
     content: '';
@@ -200,10 +203,10 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/images/products/milkshakes-tab-2x.png);
       background-size: cover;
-      margin-top: -111px;
     }
   }
   @media screen and (min-width: 1280px) {
+    background-repeat: no-repeat;
     width: 335px;
     height: 335px;
     content: '';
@@ -271,7 +274,8 @@
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: block;
+  display: flex;
+  justify-content: center;
   border: none;
   align-items: center;
   text-align: center;
@@ -288,4 +292,8 @@
   @media screen and (min-width: 1280px) {
     margin: 62px auto 50px;
   }
+}
+
+.btn-products__icon {
+  fill: #d41443;
 }
