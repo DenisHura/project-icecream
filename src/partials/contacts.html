@@ -94,7 +94,7 @@
                         <use href="../src/images/icon.svg#icon-bracket"></use>
                     </svg>
                 </button>
-                <button class="contacts__btn contacts__btn--bottom" type="button">
+                <button class="contacts__btn contacts__btn--bottom" type="button" data-franchise-modal-open>
                     Franchise
                     <svg class="contacts__icon contacts__icon--bottom" width="13" height="26">
                         <use href="../src/images/icon.svg#icon-bracket"></use>
@@ -103,4 +103,58 @@
             </div>
         </div>
     </div>
+
+    <!-- Модалка -->
+
+                <div class="franchise-backdrop is-hidden" data-franchise-modal>
+                    <div class="franchise-modal">
+                        <button type="button" class="franchise-modal-close__btn" data-franchise-modal-close>
+                            <svg width="11" height="11">
+                                <use href="../src/images/icon.svg#icon-contacts-close"></use>
+                            </svg>
+                        </button>
+                        <div class="franchise-modal-content">
+                            <p class="franchise-modal__title">REQUEST FRANCHISE INFORMATION</p>
+                            <form action="">
+                                <div class="franchise-modal-form">
+                                    <label class="franchise-modal-form__label">Name:
+                                        <span>
+                                            <input class="franchise-modal-form__input" type="text" name="name">
+                                            <svg class="franchise-modal-form__icon" width="18" height="18">
+                                                <use href="../src/images/icon.svg#icon-name-modal"></use>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="franchise-modal-form">
+                                    <label class="franchise-modal-form__label">Tel:
+                                        <span>
+                                            <input class="franchise-modal-form__input" type="tel" name="tel">
+                                            <svg class="franchise-modal-form__icon" width="18" height="18">
+                                                <use href="../src/images/icon.svg#icon-phone-modal"></use>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="franchise-modal-form">
+                                    <label class="franchise-modal-form__label">E-mail:
+                                        <span>
+                                            <input class="franchise-modal-form__input" type="email" name="mail">
+                                            <svg class="franchise-modal-form__icon" width="18" height="18">
+                                                <use href="../src/images/icon.svg#icon-email-modal"></use>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="franchise-modal-privacy">
+                                    <label class="franchise-modal-privacy__label">
+                                        <input class="franchise-modal-privacy__checkbox" type="checkbox" name="privacy">
+                                        &nbsp;Yes, I want manager to contact me via e-mail, SMS, or phone.
+                                    </label>
+                                </div>
+                                <button class="franchise-modal__btn" type="submit">LEARN MORE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 </section>
