@@ -81,7 +81,8 @@
   margin: auto;
   left: 20px;
   top: 839px;
-  margin: 0, auto;
+  margin-right: auto;
+  margin-left: auto;
   background: #ffb8ca;
   border-radius: 24px;
   &:not(:last-child) {
@@ -271,7 +272,8 @@
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: block;
+  display: flex;
+  justify-content: center;
   border: none;
   align-items: center;
   text-align: center;
@@ -288,4 +290,8 @@
   @media screen and (min-width: 1280px) {
     margin: 62px auto 50px;
   }
+}
+
+.btn-products__icon {
+  fill: #d41443;
 }
