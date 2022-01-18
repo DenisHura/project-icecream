@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -41,6 +44,10 @@ a {
   right: 0;
   background-color: transparent;
   z-index: 100;
+  &__logotype {
+    display: flex;
+    align-items: center;
+  }
 
   &__logo {
     @media screen and (min-width: 1280px) {
@@ -56,9 +63,6 @@ a {
     padding-top: 6px;
     @media screen and (min-width: 768px) {
       padding-top: 36px;
-    }
-    @media screen and (min-width: 1280px) {
-      padding-top: 38px;
     }
   }
 
@@ -130,14 +134,10 @@ a {
     display: flex;
     align-items: center;
   }
-  &__item {
-  }
 
   &__link {
+    padding-top: 50px;
     transition: color 450ms;
-    font-family: DM Sans;
-    // font-style: normal;
-    // font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
     color: #ffffff;
@@ -158,15 +158,14 @@ a {
   overflow: hidden;
   background-color: #ffb8ca;
   padding-top: 193px;
-  padding-bottom: 90px;
+  padding-bottom: 95px;
   @media screen and (min-width: 768px) {
     padding-top: 102px;
-    padding-bottom: 30px;
+    padding-bottom: 37px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 171px;
     padding-bottom: 56px;
-    //!!!!!!!!!!!!!!!!
   }
 
   &__fon {
@@ -198,7 +197,6 @@ a {
 
   &__subject {
     font-family: Titan One;
-    // font-style: normal;
     font-weight: normal;
     font-size: 26px;
     line-height: 1.15;
@@ -232,7 +230,8 @@ a {
       letter-spacing: 0.04em;
     }
   }
-  &__benefits {
+
+  &__advantages {
     position: absolute;
     right: 34px;
     top: 6px;
@@ -240,9 +239,6 @@ a {
       top: -15px;
       right: 115px;
     }
-  }
-
-  &__advantages {
     z-index: 10;
     @media screen and (max-width: 767.9px) {
       display: none;
@@ -251,16 +247,12 @@ a {
 
   &__numbers {
     font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 28px;
     line-height: 1.14;
     position: relative;
-
     letter-spacing: 0.04em;
     text-transform: uppercase;
     z-index: 5;
-
     color: #d41443;
     @media screen and (min-width: 1280px) {
       font-size: 46px;
@@ -268,8 +260,6 @@ a {
     }
   }
   &__subtitle {
-    font-family: DM Sans;
-    font-style: normal;
     font-weight: normal;
     font-size: 8px;
     line-height: 1.25;
@@ -334,7 +324,6 @@ a {
     line-height: 1.5;
     z-index: 150;
     margin-bottom: 7px;
-
     color: #ffffff;
     @media screen and (max-width: 767.9px) {
       display: none;
@@ -356,9 +345,12 @@ a {
     }
   }
   &__circle3 {
+    margin-left: 100px;
+    display: block;
     width: 16px;
     height: 16px;
     border-radius: 50%;
+    border: 0;
     background-color: #ffffff;
     margin-left: 154px;
     padding: 4px;
@@ -394,32 +386,28 @@ a {
   }
   &__list {
     display: flex;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 6px;
-  }
-  &__item {
     margin-bottom: 66px;
     @media screen and (min-width: 1280px) {
       margin-bottom: 112px;
     }
   }
 
+  &__item:not(:last-child) {
+    margin-right: 6px;
+  }
+
   &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 62.4px;
     height: 24px;
-
     background: #d41443;
     border-radius: 20px;
     border: none;
-
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 8px;
     line-height: 1.25;
-    text-align: center;
+
     color: #ffffff;
     z-index: 50;
     position: relative;
@@ -428,7 +416,6 @@ a {
     &:focus {
       background: #c7133e;
     }
-
     @media screen and (min-width: 768px) {
     }
     @media screen and (min-width: 1280px) {
@@ -483,7 +470,6 @@ a {
     }
     @media screen and (min-width: 1280px) {
       top: 262px;
-
       right: 109px;
     }
   }
@@ -529,8 +515,9 @@ a {
 
 .menu {
   position: relative;
+  // position: fixed;
   overflow: hidden;
-  padding: 23px 0px 0 0px;
+  padding: 60px 0px 0 0px;
   position: fixed;
   background-color: #e17992;
   top: 0;
@@ -538,6 +525,9 @@ a {
   width: 250px;
   height: 100vh;
   z-index: 100;
+  transform: translateX(100%);
+  transition: transform 500ms linear;
+
   @media screen and (min-width: 768px) {
     width: 320px;
   }
@@ -546,16 +536,8 @@ a {
   }
 
   &__svg {
-    display: block;
     fill: #fff;
     cursor: pointer;
-    margin-left: 208px;
-    @media screen and (min-width: 768px) {
-      margin-left: 280px;
-    }
-    @media screen and (min-width: 820px) {
-      margin-left: 500px;
-    }
   }
 
   &__btn {
@@ -566,15 +548,10 @@ a {
     background: #ffffff;
     border-radius: 20px;
     border: none;
-
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.31px;
-
     color: #d41443;
-
     cursor: pointer;
     &:hover,
     &:focus {
@@ -589,16 +566,13 @@ a {
     }
   }
   &__link {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     display: flex;
     align-items: center;
     margin-left: 23px;
     margin-top: 13px;
-
     color: #ffffff;
     cursor: pointer;
     &:hover,
@@ -609,15 +583,24 @@ a {
 
   &__item {
     width: 100%;
-
     margin-bottom: 11px;
-
     border-top: 1px solid #e18298;
   }
   &__close {
+    position: absolute;
+    top: 23px;
+    right: 28px;
     background-color: transparent;
     border: none;
-    margin-bottom: 23px;
+    // margin-bottom: 23px;
+    // margin-left: 208px;
+
+    // @media screen and (min-width: 768px) {
+    //   margin-left: 280px;
+    // }
+    // @media screen and (min-width: 820px) {
+    //   margin-left: 500px;
+    // }
   }
   &__border {
     width: 100%;
@@ -628,4 +611,64 @@ a {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+.menu.is-open {
+  transform: translateX(0);
+}
+
+.hero__circle1,
+.hero__circle {
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+}
+
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+
+.card__milk {
+  animation: scale 3s infinite;
+
+  transform: translate(-50%, -50%);
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
 }
