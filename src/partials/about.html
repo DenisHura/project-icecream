@@ -29,7 +29,21 @@
             </p>
             <p class="about-list-item text-two">Aliquam erat volutpat. Aenean accumsan.</p>
         
-            <button class=" button" type="button" data-modal-open>Read more <span class="more"> ></span></button>
+            <button onclick="document.querySelector('dialog').showModal()" class=" button " type="button" data-modal-open>Read more <svg class="about-pointer" width="10" height="20">
+                <use href="../src/images/icon.svg#icon-pointer"></use>
+            </svg></button>
+            <dialog class="about-modal">
+                <div class="about-modal__content">
+                    <div class="about-modal__close js-close-modal">
+                        X
+                    </div>
+                    <p class="about-modal__title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, ducimus impedit. Natus recusandae eos ipsum reprehenderit iste consequuntur! Est, velit eveniet? Quibusdam pariatur porro labore voluptate minima eos accusantium non!
+                    <img class="cow-img" src="./images/descktop-img/ferma.jpg" alt="cow-milk">
+                    </p>
+                </div>
+            </dialog>
+            
         </div>
             </div>
    
