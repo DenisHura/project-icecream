@@ -10,16 +10,17 @@
   height: auto;
 
   @media screen and (max-width: 767px) {
-    margin: 97px auto 80px auto;
+    /*margin: 97px auto 80px auto;*/
+
     width: 480px;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin: 140px auto 121px auto;
+    /* margin: 140px auto 121px auto;*/
     width: 768px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin: 145px auto 117px auto;
+    /*margin: 145px auto 117px auto;*/
     width: 1280px;
   }
 }
@@ -50,7 +51,7 @@
 
   li {
     position: relative;
-    transition: 600s;
+    transition: 800s;
   }
 
   li:hover,
