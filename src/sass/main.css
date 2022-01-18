@@ -2763,18 +2763,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
 .franchise-modal-privacy__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.16;
@@ -2788,10 +2782,45 @@ a {
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.franchise-modal-privacy__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.franchise-modal-privacy__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-image: url(../../src/images/contacts/check-border.svg);
+  -webkit-transition: background-color 250ms var(--animation);
+  transition: background-color 250ms var(--animation);
+}
+
+@media screen and (min-width: 1280px) {
+  .franchise-modal-privacy__icon {
+    margin-right: 8px;
+  }
+}
+
+.franchise-modal-privacy__checkbox:checked + .franchise-modal-privacy__icon {
+  background-image: url(../../src/images/contacts/check-icon.svg);
+  fill: #ffffff;
+  background-color: var(--accent-color);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 15px;
 }
 
 .franchise-modal__btn {

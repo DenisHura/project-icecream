@@ -441,21 +441,52 @@
 
 .franchise-modal-privacy {
   display: flex;
-  justify-content: center;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
 .franchise-modal-privacy__label {
-  display: flex;
   @include font(12px, 400, 1.16, 0.03em);
 
   color: var(--primary-text-color);
 
   @media screen and (min-width: 1280px) {
     @include font(14px, 400, 1.71, 0.03em);
+    display: flex;
     align-items: center;
+  }
+}
+
+.franchise-modal-privacy__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
+.franchise-modal-privacy__icon {
+  display: inline-block;
+
+  width: 16px;
+  height: 15px;
+
+  background-image: url(../../src/images/contacts/check-border.svg);
+  transition: background-color 250ms var(--animation);
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 8px;
+  }
+
+  .franchise-modal-privacy__checkbox:checked + & {
+    background-image: url(../../src/images/contacts/check-icon.svg);
+    fill: #ffffff;
+    background-color: var(--accent-color);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 15px;
   }
 }
 
