@@ -1,12 +1,15 @@
 .reviews {
   padding-bottom: 86px;
+  padding-top: 76px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 119px;
+    padding-top: 121px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 132px;
+    padding-top: 104px;
   }
 }
 
@@ -18,7 +21,6 @@
 .swiper-slide {
   text-align: center;
   background: #ffffff;
-  padding-top: 76px;
 
   /* Center slide text vertically */
   display: -webkit-box;
