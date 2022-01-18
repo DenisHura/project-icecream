@@ -249,6 +249,7 @@
 
 .contacts__btn {
   height: 44px;
+  cursor: pointer;
 
   @include font(16px, 700, 1.31, 0);
 
@@ -276,7 +277,7 @@
 
   &:hover,
   :focus {
-    background-color: #a31639;
+    background-color: #c7133e;
   }
 }
 
@@ -311,7 +312,7 @@
   fill: var(--accent-color);
 }
 
-// ------------------------Модалка-----------------------------
+// ------------------------Модалка Франшиза-----------------------------
 
 .franchise-backdrop {
   position: fixed;
@@ -363,7 +364,9 @@
   justify-content: center;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 
+  fill: var(--primary-text-color);
   background-color: transparent;
   border: 1px solid var(--primary-text-color);
   border-radius: 50%;
@@ -373,6 +376,7 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
+    border-color: var(--accent-color);
   }
 }
 
@@ -495,4 +499,80 @@
   margin: 0 auto;
   @extend .contacts__btn;
   @extend .contacts__btn--top;
+}
+
+// -------------------------Модалка карты--------------------------
+
+.map-backdrop {
+  position: fixed;
+  z-index: 160;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 1000ms var(--animation), visibility 1000ms var(--animation);
+}
+
+.map-backdrop.is-hidden {
+  .map-modal {
+    transform: translate(-50%, -50%) scale(1.5);
+    transition: transform 1000ms var(--animation);
+  }
+}
+
+.map-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 1000ms var(--animation);
+  // width: 100%;
+
+  background-color: var(--section-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 22px;
+}
+
+.map-modal-close__btn {
+  @extend .franchise-modal-close__btn;
+}
+
+.map-list {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.map-list__item + .map-list__item {
+  margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+.map-list__text {
+  text-align: center;
+  margin-bottom: 10px;
+
+  font-family: Titan One;
+  @include font(15px, 700, 1.5, 0.03em);
+
+  color: var(--accent-color);
+}
+
+.map-list__border {
+  border: 3px solid var(--accent-color);
+  border-radius: 20px;
+}
+
+.map-list__map {
+  border-radius: 20px;
 }
