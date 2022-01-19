@@ -4,11 +4,11 @@
   background-color: #fff5f6;
   @media screen and (min-width: 0px) and (max-width: 767px) {
     background-size: 100%;
-    background: url(/images/mobile-img/sectionbg.png) no-repeat;
-    background-position: center;
-    background-position-y: 85%;
-    background-size: 100% 133px;
+    background: url(/images/mobile-img/image-one-mob.png) bottom left no-repeat,
+      url(/images/mobile-img/image-two-mob.png) bottom right no-repeat;
+    background-position-y: 90%;
     background-color: #fff5f6;
+    background-size: 200px 150px;
   }
   @media screen and (min-width: 768px) {
     padding-top: 130px;
@@ -21,14 +21,15 @@
   @media screen and (min-width: 1280px) {
     justify-content: center;
     background-size: 100% auto;
-    background: url(/images/descktop-img/sectionbg.png) no-repeat;
-    background-position: center;
-    background-position-y: 120%;
-    background-size: 100% 534px;
+    background: url(/images/descktop-img/image-one.png) bottom left no-repeat,
+      url(/images/descktop-img/image-two.png) bottom right no-repeat;
+    background-position-y: 100%;
+    background-size: 534px 534px;
     background-color: #fff5f6;
   }
 }
-.products__label {
+.about__label {
+  margin-bottom: 15px;
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -48,7 +49,7 @@
   }
 }
 
-.products__title {
+.about__title {
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -59,6 +60,7 @@
   text-transform: uppercase;
   color: #d41443;
   margin-bottom: 50px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 55px;
     font-size: 48px;
@@ -71,17 +73,21 @@
 }
 
 .text {
+  margin-bottom: 20px;
+
   line-height: 19px;
   letter-spacing: 0.04em;
-
   letter-spacing: 0.04em;
   margin-left: auto;
   margin-right: auto;
   color: black;
   display: block;
   width: 100%;
-
+  @media screen and (min-width: 320px) {
+    width: 220px;
+  }
   @media screen and(min-width:768px) {
+    margin-left: 30px;
     width: 340px;
     font-style: normal;
     font-weight: 500;
@@ -93,14 +99,18 @@
   }
 }
 
-.text2 {
+.text-two {
+  margin-bottom: 20px;
   line-height: 19px;
   letter-spacing: 0.04em;
-
   letter-spacing: 0.04em;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 320px) {
+    width: 220px;
+  }
   @media screen and(min-width:768px) {
+    margin-left: 30px;
     width: 340px;
     font-style: normal;
     font-weight: 500;
@@ -108,17 +118,10 @@
     line-height: 176%;
   }
   @media screen and(min-width:1280px) {
-    width: 463px;
+    width: 460px;
   }
 }
 .about-list {
-  // @media screen and (min-width: 0px) and (max-width: 767px) {
-  //   background-size: 100%;
-  //   background: url(/images/mobile-img/sectionbg.png) no-repeat;
-  //   background-position: center;
-  //   background-position-y: 70%;
-  //   background-size: 100%;
-  // }
   @media screen and(min-width:768px) {
     margin-top: 50px;
     width: 340px;
@@ -128,49 +131,42 @@
     width: 463px;
   }
 }
-.about-list-item {
-  list-style-type: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  max-width: 220px;
-  @media screen and (min-width: 768px) {
-    margin-left: 30px;
-  }
-}
+// .about-list-item {
+//   list-style-type: none;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 20px;
+//   max-width: 220px;
+//   @media screen and (min-width: 768px) {
+//     margin-left: 30px;
+//   }
+// }
 .about-box {
-  // @media screen and (min-width: 0px) and (max-width: 767px) {
-  //   background-size: 100% auto;
-  //   background: url(../images/mobile-img/sectionbg.png) no-repeat;
-  //   background-position: center;
-  //   background-position-y: 90%;
-  //   -moz-background-size: 100%;
-  // }
   @media screen and (min-width: 768px) {
     display: flex;
   }
   @media screen and (min-width: 1280px) {
     justify-content: center;
-    // background-size: 100% auto;
-    // background: url(../images/descktop-img/sectionbg.png) no-repeat;
-    // background-position: center;
-    // background-position-y: -200%;
-    // background-size: 100%;
-
     top: 0;
     left: 0;
-
     height: 100%;
   }
 }
 .button {
+  cursor: pointer;
   background-color: #ffffff;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
   width: 176px;
   height: 44px;
   border: none;
   border-radius: 100px;
   color: #d41443;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -178,12 +174,13 @@
   margin-top: 20px;
   &:hover,
   &:focus {
-    color: white;
-    background-color: #d41443;
+    color: #d41443;
+    background-color: #ecebeb;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   @media screen and (min-width: 0px) and (max-width: 767px) {
+    padding-left: 40px;
     display: flex;
     position: relative;
     left: 50%;
@@ -241,7 +238,52 @@
   //   background-size: 100%;
   // }
 }
+.cow-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 
-// .about-second {
-//   background: url('./images/mobile-img/milkmob.png');
-// }
+  @media screen and (min-width: 0px) {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 516px;
+  }
+}
+.about-pointer {
+  margin-left: 10px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  @media screen and (min-width: 0px) and(max-width: 767px) {
+    position: relative;
+  }
+}
+
+/* Модалка */
+.about-modal {
+  border-color: white;
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  background-color: #fff5f6;
+}
+
+/* Подложка */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* Кнопка закрытия */
+.about-modal__close {
+  text-align: right;
+  cursor: pointer;
+}
