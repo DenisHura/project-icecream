@@ -121,10 +121,9 @@
     width: 460px;
   }
 }
-.about-list {
+.about__list {
   @media screen and(min-width:768px) {
     margin-top: 50px;
-    width: 340px;
   }
   @media screen and(min-width:1280px) {
     margin-left: 0px;
@@ -141,7 +140,7 @@
 //     margin-left: 30px;
 //   }
 // }
-.about-box {
+.about__box {
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -152,7 +151,7 @@
     height: 100%;
   }
 }
-.button {
+.about__button {
   cursor: pointer;
   background-color: #ffffff;
   font-family: DM Sans;
@@ -186,16 +185,11 @@
     left: 50%;
     transform: translate(-50%, 0);
   }
+  @media screen and (min-width: 767px) and (max-width: 1280px) {
+    margin-left: 20px;
+  }
 }
-
-.about-pre-title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.about-title {
-  text-align: center;
-}
-.about-picture {
+.about__picture {
   @media screen and (min-width: 0px) and (max-width: 767px) {
     content: '';
     margin: 0px;
@@ -255,7 +249,7 @@
     width: 516px;
   }
 }
-.about-pointer {
+.about__pointer {
   margin-left: 10px;
   position: relative;
   text-align: center;
@@ -292,7 +286,7 @@
     width: 460px;
   }
 }
-.about-modal-title {
+.about-modal__title {
   color: #d41443;
 }
 
