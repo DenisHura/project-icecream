@@ -491,10 +491,19 @@
 
   padding: 20px;
   width: auto;
+
+  @media screen and (max-height: 640px) {
+    padding: 12px;
+  }
 }
 
 .map-modal-close__btn {
   @extend .franchise-modal-close__btn;
+
+  @media screen and (max-height: 640px) {
+    top: 5px;
+    right: 5px;
+  }
 }
 
 .map-list {
@@ -513,6 +522,10 @@
     margin-top: 0;
     margin-left: 20px;
   }
+
+  @media screen and (max-height: 640px) {
+    margin-top: 5px;
+  }
 }
 
 .map-list__text {
@@ -520,16 +533,24 @@
   margin-bottom: 10px;
 
   font-family: Titan One;
-  @include font(15px, 700, 1.5, 0.03em);
+  @include font(15px, 400, 1.5, 0.03em);
 
   color: var(--accent-color);
+
+  @media screen and (max-height: 640px) {
+    margin-bottom: 5px;
+  }
 }
 
 .map-list__border {
   border: 3px solid var(--accent-color);
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .map-list__map {
-  border-radius: 20px;
+  @media screen and (max-height: 640px) {
+    width: 170px;
+    height: 110px;
+  }
 }
