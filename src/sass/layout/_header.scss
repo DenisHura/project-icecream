@@ -35,13 +35,13 @@
     align-items: center;
   }
 
-  &__logo {
-    @media screen and (min-width: 1280px) {
-      position: absolute;
-      top: 36px;
-      left: 46px;
-    }
-  }
+  // &__logo {
+  //   @media screen and (min-width: 1280px) {
+  //     position: absolute;
+  //     top: 36px;
+  //     left: 46px;
+  //   }
+  // }
 
   &__container {
     display: flex;
@@ -61,7 +61,7 @@
     text-transform: uppercase;
     color: #d41443;
     @media screen and (min-width: 1280px) {
-      margin-left: 0;
+      // margin-left: 0;
       margin-right: 110px;
     }
   }
