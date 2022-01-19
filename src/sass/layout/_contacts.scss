@@ -133,35 +133,7 @@
 .contacts-list__text {
   @include font(12px, 500, 1.5, 0);
 
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-
-    margin-top: 25px;
-    margin-bottom: 25px;
-
-    background-color: #e1e1e1;
-
-    @media screen and (min-width: 768px) {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin-top: 32px;
-      margin-bottom: 32px;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    @include font(14px, 500, 1.66, 0);
-  }
-
-  @media screen and (min-width: 1280px) {
-    @include font(16px, 500, 1.83, 0.04em);
-  }
+  @extend .data-time-list;
 }
 
 .data-time-list::after {
@@ -504,14 +476,7 @@
 // -------------------------Модалка карты--------------------------
 
 .map-backdrop {
-  position: fixed;
-  z-index: 160;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
-
-  transition: opacity 1000ms var(--animation), visibility 1000ms var(--animation);
+  @extend .franchise-backdrop;
 }
 
 .map-backdrop.is-hidden {
@@ -522,22 +487,23 @@
 }
 
 .map-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 20px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 1000ms var(--animation);
-  // width: 100%;
+  @extend .franchise-modal;
 
-  background-color: var(--section-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 22px;
+  padding: 20px;
+  width: auto;
+
+  @media screen and (max-height: 640px) {
+    padding: 12px;
+  }
 }
 
 .map-modal-close__btn {
   @extend .franchise-modal-close__btn;
+
+  @media screen and (max-height: 640px) {
+    top: 5px;
+    right: 5px;
+  }
 }
 
 .map-list {
@@ -556,6 +522,10 @@
     margin-top: 0;
     margin-left: 20px;
   }
+
+  @media screen and (max-height: 640px) {
+    margin-top: 5px;
+  }
 }
 
 .map-list__text {
@@ -563,16 +533,24 @@
   margin-bottom: 10px;
 
   font-family: Titan One;
-  @include font(15px, 700, 1.5, 0.03em);
+  @include font(15px, 400, 1.5, 0.03em);
 
   color: var(--accent-color);
+
+  @media screen and (max-height: 640px) {
+    margin-bottom: 5px;
+  }
 }
 
 .map-list__border {
   border: 3px solid var(--accent-color);
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .map-list__map {
-  border-radius: 20px;
+  @media screen and (max-height: 640px) {
+    width: 170px;
+    height: 110px;
+  }
 }
