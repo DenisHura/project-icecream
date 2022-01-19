@@ -1,70 +1,74 @@
-.adv-section{
+.adv-section {
     background-color: var(--section-bg-color);
-}
-.adv{
     padding-bottom: 97px;
     @media screen and (min-width: 768px) {
-        padding-bottom: 139px;
+      padding-bottom: 140px;
     }
-    @media screen and (min-width: 1280px) {
-        padding-bottom: 140px;
-    }
-}
-.adv__list {
-    margin-bottom: -38px;
+  }
+  .adv { 
     @media screen and (min-width: 768px) {
-        display: flex;
-        margin-right: -60px;
+      display: flex;
     }
-    @media screen and (min-width: 1280px) {
-        margin-right: -30px;
-    }
-}
-.adv__item {
+  }
+  .adv__item {
     width: 230px;
     height: auto;
-    margin-bottom: 38px;
     @media screen and (min-width: 768px) {
         width: 180px;
-        margin-right: 60px;
     }
     @media screen and (min-width: 1280px) {
         width: 330px;
-        margin-right: 30px;
     }
-}
-.adv__item::before {
-    content: "";
+    &:not(:last-child) {
+    margin-bottom: 38px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 60px;
+        }
+    @media screen and (min-width: 1280px) {
+        margin-right: 30px;
+        }
+    }
+  }
+  .adv__item::before {
+    content: '';
     display: inline-block;
-}
-.adv__item--first::before {
-  background-image: url("/images/advantages/adv1.png");
-  width: 33px;
-  height: 50px;
-  @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  }
+  .adv__item--first::before {
+      background-image: url("/images/advantages/adv1.png");
+      width: 33px;
+      height: 50px;
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+          background-image: url('/images/advantages/adv1x2.png');
+          background-size: 33px 50px;
+      } 
+    background-image: url('/images/advantages/adv1.png');
+    width: 33px;
+    height: 50px;
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
       background-image: url('/images/advantages/adv1x2.png');
       background-size: 33px 50px;
-  } 
-}
-.adv__item--second::before {
-  background-image: url("/images/advantages/adv2.png");
-  width: 50px;
-  height: 50px;
-  @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+    }
+  }
+  .adv__item--second::before {
+    background-image: url('/images/advantages/adv2.png');
+    width: 50px;
+    height: 50px;
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
       background-image: url('/images/advantages/adv2x2.png');
       background-size: 50px 50px;
+    }
   }
-}
-.adv__item--third::before {
-  background-image: url("/images/advantages/adv3.png");
-  width: 44px;
-  height: 50px;
-  @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .adv__item--third::before {
+    background-image: url('/images/advantages/adv3.png');
+    width: 44px;
+    height: 50px;
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
       background-image: url('/images/advantages/adv3x2.png');
       background-size: 44px 50px;
+    }
   }
-}
-.adv__title {
+  .adv__title {
     font-family: Titan One;
     font-size: 36px;
     line-height: 1.14;
@@ -72,27 +76,26 @@
     text-transform: uppercase;
     color: var(--accent-color);
     margin: 16px 0;
-    @media screen and (min-width: 768px){
-        font-size: 48px;
-        text-transform: lowercase;
-        margin-top: 36px;
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      text-transform: lowercase;
+      margin-top: 36px;
     }
-    @media screen and (min-width: 1280px){
-        font-size: 58px;
-        margin-top: 40px;
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      margin-top: 40px;
     }
-}
-.adv__text {
+  }
+  .adv__text {
     font-family: DM Sans;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.73;
     color: #000000;
-    @media screen and (min-width: 768px){
-        font-size: 14px;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
     }
-    @media screen and (min-width: 1280px){
-        font-size: 16px;
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
     }
-}
-
+  }
