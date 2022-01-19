@@ -1,19 +1,19 @@
 //Футер
-.footer {
+.footer__section {
     background-color: var(--section-bg-color);
 }
 
 //Общий контейнер для заглавного текста и контактов в футере
-.footer__container {
+.footer__field {
     
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 120px;
+        padding-bottom: 120px;
     }
 
     @media screen and (min-width: 1280px) {
-            margin-bottom: 100px;
+            padding-bottom: 100px;
     }
 }
 
@@ -42,6 +42,7 @@
 .footer__title {
     //Нomemade ice cream made
     &--top {
+        display: block;
         font-family: Titan One;
         font-weight: 400;
         font-size: 18px;
@@ -170,14 +171,12 @@
 }
 
 //Авторское право
-.footer-copyright__list {
+.copyright {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     padding-bottom: 25px;
 
     @media screen and (min-width: 768px) {
-        flex-direction: row;
         padding-bottom: 20px;
     }
 
@@ -186,19 +185,19 @@
     }
 }
 
-.footer-copyright__item {
+.copyright__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
     color: var(--primary-text-color);
-    text-align: center;
+
+    @media screen and (max-width: 479px) {
+        width: 150px;
+        text-align: center;
+    }
 
     @media screen and (min-width: 768px) {
         letter-spacing: 0.02em;
         line-height: 1.86;
-
-        &+& {
-            margin-left: 5px;
-        }
     }
 }
