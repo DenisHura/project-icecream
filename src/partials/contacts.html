@@ -119,7 +119,7 @@
                     <div class="franchise-modal-form">
                         <label class="franchise-modal-form__label">Name:
                             <span>
-                                <input class="franchise-modal-form__input" type="text" name="name">
+                                <input class="franchise-modal-form__input" type="text" name="name" required>
                                 <svg class="franchise-modal-form__icon" width="18" height="18">
                                     <use href="../src/images/icon.svg#icon-name-modal"></use>
                                 </svg>
@@ -129,7 +129,10 @@
                     <div class="franchise-modal-form">
                         <label class="franchise-modal-form__label">Tel:
                             <span>
-                                <input class="franchise-modal-form__input" type="tel" name="tel" pattern="^[0-9]+$">
+
+                                <input class="franchise-modal-form__input" type="tel" name="tel" required>
+
+                             
                                 <svg class="franchise-modal-form__icon" width="18" height="18">
                                     <use href="../src/images/icon.svg#icon-phone-modal"></use>
                                 </svg>
@@ -139,7 +142,7 @@
                     <div class="franchise-modal-form">
                         <label class="franchise-modal-form__label">E-mail:
                             <span>
-                                <input class="franchise-modal-form__input" type="email" name="mail">
+                                <input class="franchise-modal-form__input" type="email" name="mail" required>
                                 <svg class="franchise-modal-form__icon" width="18" height="18">
                                     <use href="../src/images/icon.svg#icon-email-modal"></use>
                                 </svg>
@@ -148,7 +151,7 @@
                     </div>
                     <div class="franchise-modal-privacy">
                         <label class="franchise-modal-privacy__label">
-                            <input class="franchise-modal-privacy__checkbox" type="checkbox" name="privacy">
+                            <input class="franchise-modal-privacy__checkbox" type="checkbox" name="privacy" required>
                             <span class="franchise-modal-privacy__icon"></span>
                             &nbsp;Yes, I want manager to contact me via e-mail, SMS, or phone.
                         </label>
