@@ -115,10 +115,10 @@
   transition-duration: 1000ms;
   transition-timing-function: linear;
   transition-delay: 500ms;
-
   &:hover,
   &:focus {
     position: absolute;
+
     width: 50%;
     transform: rotateZ(5deg);
     z-index: 100;
