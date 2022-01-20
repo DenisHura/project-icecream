@@ -33,11 +33,11 @@
   &__logotype {
     display: flex;
     align-items: center;
-    @media screen and (min-width: 1280px) {
-      position: absolute;
-      top: 36px;
-      left: 46px;
-    }
+    // @media screen and (min-width: 1280px) {
+    //   position: absolute;
+    //   top: 36px;
+    //   left: 46px;
+    // }
   }
 
   &__container {
@@ -57,10 +57,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
-    @media screen and (min-width: 1280px) {
-      // margin-left: 0;
-      margin-right: 110px;
-    }
   }
   &__opensvg {
     fill: #d41443;
@@ -106,6 +102,17 @@
     @media screen and (min-width: 1279.9px) {
       display: none;
     }
+  }
+}
+
+div.header__container {
+  position: relative;
+}
+
+.header__logotype {
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    left: 49px;
   }
 }
 
