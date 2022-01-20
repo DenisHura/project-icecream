@@ -33,15 +33,12 @@
   &__logotype {
     display: flex;
     align-items: center;
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      top: 36px;
+      left: 46px;
+    }
   }
-
-  // &__logo {
-  //   @media screen and (min-width: 1280px) {
-  //     position: absolute;
-  //     top: 36px;
-  //     left: 46px;
-  //   }
-  // }
 
   &__container {
     display: flex;
@@ -119,6 +116,9 @@
   &__list {
     display: flex;
     align-items: center;
+    @media screen and (min-width: 1280px) {
+      margin-left: 240px;
+    }
   }
 
   &__link {
