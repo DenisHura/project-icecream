@@ -112,14 +112,14 @@
 .gallery__foto {
   border-radius: 9%;
   transition-property: transform, width;
-  transition-duration: 1000ms;
+  transition-duration: 600ms;
   transition-timing-function: linear;
-  transition-delay: 500ms;
+  transition-delay: 200ms;
 
   &:hover,
   &:focus {
     position: absolute;
-    width: 50%;
+    width: 105%;
     transform: rotateZ(5deg);
     z-index: 100;
   }
